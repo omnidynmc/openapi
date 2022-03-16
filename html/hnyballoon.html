@@ -1,0 +1,47 @@
+<style type="text/css">
+  div.balloon {
+    text-align: left;
+    align: left;
+    width: 250px;
+    font: 8px;
+    overflow: auto;
+  }
+
+  div.balloon a.callsign:link { font-weight: bold; font-style: none; color: #ff8080 }
+  div.balloon a:link { color: #909090; font-style: normal; }
+  div.balloon a:visited { color: #ff0000; font-style: normal; }
+  div.balloon a:active { color: #a05050; font-style: normal; } 
+
+  div.balloon hr {
+    color: #FF5500;
+    background-color: #FF5500;
+    border: 0;
+    height: 2px;
+  }
+
+  div.balloon h1 {
+    font-weight: bold;
+    font-size: 10px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  div.balloon h2 {
+    font-weight: normal;
+    font-size: 10px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: #000000;
+  }
+</style>
+
+<div class="balloon">
+  <strong>${callsign}</strong><br />
+  (${class})
+  <hr noshade />
+  <p>
+    ${entity_name}<br />
+    ${street_address}<br />
+    ${city}, ${state} ${zip_code}<br />
+  </p>
+</div>
